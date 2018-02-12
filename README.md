@@ -28,6 +28,8 @@ ex) x^2 - x + 4 -> <code>x2 -x 4</code>
 
 + ### extract_function()
 This function changes string type function to grape type variable.
+#### Input: string
+#### Return: dictionary
    ```{.python}
    extract_function(_input)
    ```
@@ -38,3 +40,5 @@ This function changes string type function to grape type variable.
   
    => {'variables': [{'a': 3.0, 'n': 2.0}, {'a': 2.0, 'n': 1.0}], 'const': 1.0}
    ```
+ + ### derivative_function()
+ This function 
