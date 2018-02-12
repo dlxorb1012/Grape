@@ -27,8 +27,8 @@ ex) x^2 - x + 4 -> <code>x2 -x 4</code>
 > All grapes have same keys('variables' and 'const')
 
 + ### extract_function()
-  This function changes string type function to grape type variable.
-      extract_function(_input)
+  This function changes string type function to grape type variable. <br>
+  `extract_function(_input)`
   > `_input` should be string type that followed grape grammars
    ```{.python}
    _input = '3x2 2x 1'
