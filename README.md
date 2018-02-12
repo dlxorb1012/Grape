@@ -29,10 +29,10 @@ ex) x^2 - x + 4 -> <code>x2 -x 4</code>
 + ### extract_function()
       extract_function(_input)
   > `_input` should be string type that followed grape grammars
-  + This function changes string type function to grape type variable.<br>
-  ```{.python}
-  _input = '3x2 2x 1'
-  print(extract_function(_input))
+  + This function changes string type function to grape type variable.<br>ex)<br>
+   ```{.python}
+   _input = '3x2 2x 1'
+   print(extract_function(_input))
   
-  => {'variables': [{'a': 3.0, 'n': 2.0}, {'a': 2.0, 'n': 1.0}], 'const': 1.0}
-  ```
+   => {'variables': [{'a': 3.0, 'n': 2.0}, {'a': 2.0, 'n': 1.0}], 'const': 1.0}
+   ```
