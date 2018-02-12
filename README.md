@@ -5,5 +5,9 @@ Grape is a library that helps you to create, differentiate and textize functions
   
 # Api Reference
 ### Grape variable
-<code>grape = {'variables': [], 'const': 0}</code><br>
-All grapes have same keys('variables' and 'const')
+<code>
+  var_dic = {'a': 1, 'n': 1}
+  var_list = [var_dic]
+  grape = {'variables': [], 'const': 0}
+</code>
+  + All grapes have same keys('variables' and 'const')
