@@ -24,12 +24,12 @@ ex) x^2 - x + 4 -> <code>x2 -x 4</code>
     var_dic = {'a': 1, 'n': 1}
     var_list = [var_dic]  
     grape = {'variables': [], 'const': 0}
-> All grapes have same keys('variables' and 'const')
+> Grape variable should have **'variables'** and **'const'** keys
+> Grape['variables']'s elements should have **'a'** and **'n'** keys
 
 + ### extract_function()
-This function changes string type function to grape type variable.
-#### Input: string
-#### Return: dictionary
+This function needs grape-grammar-based string type function. Returns grape type variable.
+#### Input: string. Return: dictionary.
    ```{.python}
    extract_function(_input)
    ```
@@ -38,7 +38,35 @@ This function changes string type function to grape type variable.
    _input = '3x2 2x 1'
    print(extract_function(_input))
   
-   => {'variables': [{'a': 3.0, 'n': 2.0}, {'a': 2.0, 'n': 1.0}], 'const': 1.0}
+   => {'variables': [{'a': 3.0, 'n': 2.0}, {'a': 2.0, 'n': 1.0}], 'const': 1.0} # 3x^2 + 2x + 1
    ```
  + ### derivative_function()
- This function 
+ This function needs grape type variable. Returns derivatived grape type variable
+ #### Input: dictionary. Output: dictionary.
+     ```{.python}
+     derivative_function(original_func_grape)
+     ```
+ > `original_func_grape` should be grape(dictionary) type
+ 
+     ```{.python}
+     original_grape = {'variables': [{'a': 3.0, 'n': 2.0}, {'a': 2.0, 'n': 1.0}], 'const': 1.0} # 3x^2 + 2x + 1
+     print(derivative_function(original_grape))
+     
+     => {'variables': [{'n': 1.0, 'a': 6.0}, {'n': 0.0, 'a': 2.0}], 'const': 0} # 6x + 2
+     ```
+ 
+ + ### execute_function()
+ This function needs grape type variable and float type x. Returns float type function value of x
+ #### Input: dictionary, float or int. Output: float or int.
+     ```{.python}
+     execute_function(function_grape, x)
+     ```
+ > `function_grape` should be grape(dictionary) type, `x` should be int or float type
+ 
+     ```{.python}
+     func_grape = {'variables': [{'n': 1.0, 'a': 6.0}, {'n': 0.0, 'a': 2.0}], 'const': 0} # 6x + 2
+     print(execute_function(func_grape, 3))
+     
+     => 20.0
+     
+## Thank you
