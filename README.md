@@ -5,5 +5,5 @@ Grape is a library that helps you to create, differentiate and textize functions
   
 # Api Reference
 Grape variable
-  dd
+  <code>asd</code>
 ds
