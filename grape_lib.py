@@ -53,9 +53,6 @@ def grape_to_string(grape):
     return stringed
 
 
-print(execute_function({'variables': [{'n': 1.0, 'a': 6.0}, {'n': 0.0, 'a': 2.0}], 'const': 0}, 3))
-
-
 
 
 
