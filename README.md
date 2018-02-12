@@ -10,5 +10,5 @@ Grape is a library that helps you to create, differentiate and textize functions
   var_list = [var_dic]
   grape = {'variables': [], 'const': 0}
 </code>
-
+<hr>
 + All grapes have same keys('variables' and 'const')
