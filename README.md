@@ -8,9 +8,10 @@ Grape use function as follow grammar
 ## Axn
 + A is coefficient
 + n is power
+
 ## Ignore plus and stick minus with number
 ex) x^2 - x + 4
-       x2 -x 4
+    x2 -x 4
 
 ### Example
 1. 3x^2 - 2x + 1
