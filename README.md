@@ -34,12 +34,12 @@ This function needs grape-grammar-based string type function. Returns grape type
    extract_function(_input)
    ```
   > `_input` should be string type that followed grape grammars
-   ```{.python}
+  
    _input = '3x2 2x 1'
    print(extract_function(_input))
   
    => {'variables': [{'a': 3.0, 'n': 2.0}, {'a': 2.0, 'n': 1.0}], 'const': 1.0} # 3x^2 + 2x + 1
-   ```
+   
  + ### derivative_function()
  This function needs grape type variable. Returns derivatived grape type variable
  #### Input: dictionary. Output: dictionary.
