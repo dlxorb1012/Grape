@@ -56,12 +56,12 @@ This function needs grape-grammar-based string type function. Returns grape type
  + ### execute_function()
  This function needs grape type variable and float type x. Returns float type function value of x
  #### Input: dictionary, float or int. Output: float or int.
-     ```{.python}
+     
      execute_function(function_grape, x)
-     ```
+     
  > `function_grape` should be grape(dictionary) type, `x` should be int or float type
  
-     ```{.python}
+     
      func_grape = {'variables': [{'n': 1.0, 'a': 6.0}, {'n': 0.0, 'a': 2.0}], 'const': 0} # 6x + 2
      print(execute_function(func_grape, 3))
      
